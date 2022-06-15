@@ -5,8 +5,8 @@ stages:
 pages:
   stage: deploy
   script:
-    - mkdir rsite
-    - mv index.html ./rsite
+    - mkdir public
+    - mv index.html ./public
   artifacts:
     paths:
-      - rsite
+      - public
