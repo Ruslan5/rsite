@@ -1,5 +1,5 @@
 import './App.scss';
-import { Routes, Route} from "react-router-dom";
+import { Routes, HashRouter} from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
@@ -10,14 +10,14 @@ function App() {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<Home />} />
-                    <Route path="about" element={<About />} />
+                <HashRouter path="/" element={<Layout />}>
+                    <HashRouter index element={<Home />} />
+                    <HashRouter path="about" element={<About />} />
                     {/*<Route path="product-vert" element={<ProductVert />} />*/}
 
-                    <Route path="/product" element={<Product />} />
-                    <Route path="contact" element={<Contact />} />
-                </Route>
+                    <HashRouter path="/product" element={<Product />} />
+                    <HashRouter path="contact" element={<Contact />} />
+                </HashRouter>
             </Routes>
         </>
     )
