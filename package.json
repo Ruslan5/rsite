@@ -1,6 +1,6 @@
 {
   "homepage": "http://ruslan5.github.io/rsite",
-  "name": "r-site",
+  "name": "rsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
