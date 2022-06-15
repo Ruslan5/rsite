@@ -9,7 +9,7 @@ import About from "./components/About";
 function App() {
     return (
         <>
-            <Routes>
+            <Routes  basename="/rsite">
                 <HashRouter path="/" element={<Layout />}>
                     <HashRouter index element={<Home />} />
                     <HashRouter path="about" element={<About />} />
