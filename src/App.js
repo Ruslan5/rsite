@@ -13,9 +13,7 @@ function App() {
                 <HashRouter path="/" element={<Layout />}>
                     <HashRouter index element={<Home />} />
                     <HashRouter path="about" element={<About />} />
-                    {/*<Route path="product-vert" element={<ProductVert />} />*/}
-
-                    <HashRouter path="/product" element={<Product />} />
+                    <HashRouter path="product" element={<Product />} />
                     <HashRouter path="contact" element={<Contact />} />
                 </HashRouter>
             </Routes>

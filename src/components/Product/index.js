@@ -14,7 +14,7 @@ const Product = () => {
           rootNodeClassName="node__root"
           branchNodeClassName="node__branch"
           leafNodeClassName="node__leaf"
-          // TreeNodeEventCallback={preventDefault("node__root")}
+          initialDepth={0}
           dimensions={{
             width: 1200,
             height: 500
